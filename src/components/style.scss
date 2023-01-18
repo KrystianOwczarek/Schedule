@@ -1,0 +1,420 @@
+html{
+    font-size: 20px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #222222;
+    color: #fafafa;
+    font-family: 'Noto Sans SignWriting', sans-serif;
+    overflow-x: hidden;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100%;
+}
+
+.login{
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(4px);
+    z-index: 1;
+}
+
+form{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+form input{
+    position: relative;
+    top: 20rem;
+    width: 10rem;
+    height: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+form button{
+    display: flex;
+    position: relative !important;
+    top: 21rem !important;
+    left: 0 !important;
+    width: 10rem !important;
+}
+
+h1{
+    text-align: center;
+    margin-top: 2.6rem;
+    font-size: 2.2rem;
+}
+
+.positionForAdmin{
+    display: flex;
+    flex-flow: row nowrap;
+    position: relative;
+    left: 2.5rem;
+}
+
+.positionForUser{
+    display: flex;
+    flex-flow: row nowrap;
+    position: relative;
+    left: 4.4rem;
+}
+
+table{
+    display: flex;
+    flex-flow: column wrap;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+table thead th:first-child{
+    width: 4rem;
+}
+
+table thead th{
+    width: 8rem;
+    height: 2.5rem;
+    border: 1px solid #fafafa;
+}
+
+table thead th:last-child{
+    width: 20rem;
+    word-spacing: -0.4rem;
+}
+
+table tbody tr{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+table tbody td:first-child{
+    width: 4rem;
+}
+
+table tbody td{
+    text-align: center;
+    padding: 1rem;
+    border: 1px solid #fafafa;
+    width: 5rem;
+}
+
+#activityHeader{
+    width: 10rem;
+}
+
+.activity{
+    width: 10rem;
+}
+
+#reservations{
+    width: 20.3rem;
+    word-spacing: -0.4rem;
+}
+
+.reservation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem !important;
+    padding-left: 0 !important;
+    padding-bottom: 1rem !important;
+    padding-right: 0 !important;
+}
+
+td div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4.6rem;
+    height: 2rem;
+    font-size: 0.9rem;
+    background-color: lightgreen;
+    cursor: pointer;
+    z-index: 0;
+    transition: all .2s ease-in-out;
+}
+
+td div:hover{
+    background-color: #5C985C;
+}
+
+.buttonPosition{
+    position: relative;
+    top: -0.4rem;
+    left: 0.1rem;
+}
+
+div button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 1rem;
+    right: 2rem;
+    width: 4rem;
+    height: 2rem;
+    font-size: 0.9rem;
+    position: absolute;
+    border: none;
+    border-radius: 4px;
+    background-color: #2485c9;
+    color: #fafafa;
+    cursor: pointer;
+}
+
+div button:hover{
+    background-color: #1C6AA0;
+}
+
+.noDisplay{
+    display: none;
+}
+
+.reset{
+    position: relative;
+    width: 3.5rem;
+    height: 2.8rem;
+    left: 58.5rem;
+    background-color: #890513;
+    font-size: 0.9rem;
+    top: 0.95rem;
+    font-weight: bold;
+    z-index: 1;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.reset:hover{
+    background-color: #6D040F;
+}
+
+.freeDayButton{
+    position: relative;
+    width: 3.5rem;
+    height: 3.1545rem;
+    margin-top: 0.94rem;
+    top: 3.75rem;
+    left: 0.1rem;
+    font-size: 0.9rem;
+    color: #fafafa;
+    background-color: #5C985C;
+    font-weight: bold;
+    margin-bottom: 1px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.freeDayButton:hover{
+    background-color: #3B623B;
+}
+
+.freeDayButton:last-child{
+    display: none;
+}
+
+.seting{
+    width: 20rem;
+}
+
+.selectForUser{
+    display: flex;
+    flex-flow: column nowrap;
+    position: relative;
+    top: 4.75rem;
+    left: -15.4rem;
+    width: 10rem;
+    right: 13rem;
+}
+
+.selectForAdmin{
+    display: flex;
+    flex-flow: column nowrap;
+    position: relative;
+    top: 4.75rem;
+    left: -18.6rem;
+    width: 10rem;
+    right: 13rem;
+}
+
+select{
+    width: 10rem;
+    height: 2rem;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 2.1rem;
+    z-index: 0;
+}
+
+select:last-child{
+    display: none;
+}
+
+.form{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(4px);
+    z-index: 1;
+}
+
+img{
+    position: relative;
+    top: 1rem;
+    left: 12rem;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+textarea{
+    display: none;
+}
+
+p{
+    z-index: 2;
+}
+
+.selected{
+    background-color: red;
+}
+
+.selected:hover{
+    background-color: #CC0000;
+}
+
+.confirmed{
+    background-color: #2485c9 !important;
+    cursor: default;
+}
+
+.confirmed:hover{
+    background-color: #2485c9 !important;
+}
+
+.informationDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(4px);
+    z-index: 1;
+}
+
+.information{
+    text-align: center;
+    width: 30rem;
+    height: 20rem;
+    border-radius: 4px;
+    background-color: #222222;
+}
+
+h2{
+    margin-top: 2rem;
+    word-spacing: -15px;
+}
+
+.information p{
+    word-spacing: -15px;;
+}
+
+.information form{
+    display: none;
+}
+
+.cancel{
+    position: relative;
+    background-color: #890513;
+    top: 2rem;
+    left: 6.1rem;
+}
+
+.cancel:hover{
+    background-color: #6D040F;
+}
+
+.confirm{
+    position: relative;
+    top: 0;
+    left: 20rem;
+    background-color: #5C985C;
+}
+
+.confirm:hover{
+    background-color: #3B623B;
+}
+
+.legend{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    width: 14rem;
+    height: 14rem;
+    border-radius: 4px;
+    background-color: #363636 ;
+}
+
+.legend div{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0.9rem;
+    justify-content: flex-start;
+    word-spacing: -0.5rem;
+}
+
+.lightgreen{
+    width: 1rem;
+    height: 1rem;
+    border-radius: 4px;
+    background-color: lightgreen;
+}
+
+.red{
+    width: 1rem;
+    height: 1rem;
+    border-radius: 4px;
+    background-color: red;
+}
+
+.blue{
+    width: 1rem;
+    height: 1rem;
+    border-radius: 4px;
+    background-color: #2485c9;
+}
+
+@media only screen and (max-width: 1800px)  {
+    .legend{
+        display: none;
+    }
+}
